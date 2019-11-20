@@ -1015,14 +1015,14 @@ void detector_run(char *datacfg, char *cfgfile, char *weightfile, char *filename
                 else
                 {
                 save_image(im, "predictions");
-                /*
+                
                 #ifdef OPENCV
                     usleep(1000*100);
                     make_window("predictions", 512, 512, 0);
                     show_image(im, "predictions", 0);
 
                 #endif
-                 */
+                 
                 }
                 free_image(im);
                 free_image(sized);
